@@ -13,28 +13,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   
 
-    <title>Dashboard Health Track</title>
+    <title>idwall</title>
   </head>
   <body>
 
     <div class="col-md-2 container-md menu-lateral">
 
-      <h1 class="display-6 row-5 menu-lateral title">Menu</h1>
+      <h1 class="h3 row-5 menu-lateral title"><Strong>idwall</Strong></h1>
 
       <div  class="container row-6 menu-lateral links"> 
-        <a href="#"><li><img class="menu-lateral link img" src="img/icons8-casinha-de-cachorro-30.png"></img>Home</li></a>
-        <a href="modules/refeição/index.html"><li ><img class="menu-lateral link img" src="img/icons8-comida-30.png"></img>Refeições</li></a>
-        <a href="modules/exercicio/index.html"><li><img class="menu-lateral link img" src="img/icons8-exercício-30.png"></img>Exercícios</li></a>
-        <a href="modules/peso/index.html"><li><img class="menu-lateral link img" src="img/icons8-escala-30.png"></img>Peso</li></a>
-      </div>
-
-      
-
-      <div class="container row-1 menu-lateral login">
-
-            <a href="modules/login/index.html"><h1 class="lead login">Login</h1></a>
-            <a href="modules/cadastrar/index.html"><h1 class="lead login">Cadastrar</h1></a>
-
+        <a href="#"><li><img class="menu-lateral link img"></img>Home</li></a>
+        <a href=""><li ><img class="menu-lateral link img"></img>Protocólos</li></a>
+        <a href=""><li><img class="menu-lateral link img"></img>Documentos</li></a>
+        <a href=""><li class="menu-destaque"><img class="menu-lateral link img"></img>Usuários</li></a>
+        <a href=""><li><img class="menu-lateral link img"></img>Matrizes</li></a>
+        <a href=""><li><img class="menu-lateral link img"></img>Atributos</li></a>
+        <a href="monitor.html"><li><img class="menu-lateral link img"></img>Monitor</li></a>
+        <a href=""><li><img class="menu-lateral link img"></img>Organizações</li></a>
+        <a href=""><li><img class="menu-lateral link img"></img>Sair</li></a>
       </div>
 
     </div>
@@ -42,71 +38,113 @@
 
     <div class="col-md-10 painel">
       <div class="container-md painel">
-        <h1 class="display-6 logo">HEALTH TRACK</h1>
+        <h1 class="display-6 logo">Usuários</h1>
 
 
         <div class="container-md dashboard">
-          <h1 class="display-6 dashboard title">Dashboard</h1>
 
-
-          <div class="container-md status">
-
-            <div class="dashboard lists">
-
-
-              <ul class="dashboard list">
-                <li class="list item">
-                  <a class="item name"><strong>Corrida</strong></a>
-                  <span class="item time">30min</span>
-                  <span class="item calories">396cal</span>
-                </li>
-                <li class="list item">
-                  <a class="item name"><strong>Café da manhã</strong></a>
-                  <span class="item time"></span>
-                  <span class="item calories">200cal</span>
-                </li>  
-                <li class="list item">
-                  <a class="item name"><strong>Almoço</strong></a>
-                  <span class="item time"></span>
-                  <span class="item calories">305cal</span>
-                </li> 
-                <li class="list item">
-                  <a class="item name"><strong>Janta</strong></a>
-                  <span class="item time"></span>
-                  <span class="item calories">285cal</span>
-                </li> 
-                <li class="list item">
-                  <a class="item name"><strong>Musculaçao</strong></a>
-                  <span class="item time">2h</span>
-                  <span class="item calories">490cal</span>
-                </li> 
-
-
-                           
-              </ul>
-
+          <div class="container my-3">
+            <div class="container users">
+                <form class="form users">
+                  <div class="col users">
+                      <div class="filter text">
+                          <input type="text" name="Filtro" id="Filtro" class="form-control" placeholder="Filtro">
+                      </div>
+                      <button class="btn btn-primary my-1" type="submit">Listar</button>
+                  </div> 
+                </form>
             </div>
-            <div class="dashboard info">
-              <h1 class="display-6 day-title"><strong>12 de agosto</strong></h1>
-              <p class="day-calories"><strong> - 96cal</strong></p>
-
-
-              <p class="day-weight"><img class="menu-lateral link img" src="img/icons8-escala-30(2).png"><strong>90kg</strong></p>
-
-
-              <div class="status-container">
-                <div class="status-exercise">
-                  <img src="img/Running.png" >
-                  <strong>886cal</strong>
-                </div>
-                <div class="status-food">
-                    <img src="img/Apple.png" >
-                    <strong>790cal</strong>
+            <div class="dropdown my-3">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Ações
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Adicionar</a>
+                  <a class="dropdown-item" href="#">Excluir</a>
+                  <a class="dropdown-item" href="#">Editar</a>
                 </div>
               </div>
-            </div>
-
           </div>
+          <div class="container text-center">
+            <table class="table table-striped">
+                <thead>
+                  <tr class="btn-secondary">
+                    <th scope="col">#</th>
+                    <th scope="col">Clientes</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Protocolos</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Backoffice</th>
+                    <th scope="col">ID Network</th>
+                    <th scope="col">Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Avelino Junior</td>
+                    <td>00001</td>
+                    <td>0</td>
+                    <td>avelino@fiap.com</td>
+                    <td>Sim</td>
+                    <td>Não</td>
+                    <td><button type="button" class="btn btn-primary">Logar</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Ciro Gomes</td>
+                    <td>00002</td>
+                    <td>3</td>
+                    <td>ciro@fiap.com</td>
+                    <td>Sim</td>
+                    <td>Sim</td>
+                    <td><button type="button" class="btn btn-primary">Logar</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Mateus Araujo</td>
+                    <td>00003</td>
+                    <td>2</td>
+                    <td>mateus@fiap.com</td>
+                    <td>Sim</td>
+                    <td>Não</td>
+                    <td><button type="button" class="btn btn-primary">Logar</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Arthur Silva</td>
+                    <td>00004</td>
+                    <td>0</td>
+                    <td>artur@fiap.com</td>
+                    <td>Sim</td>
+                    <td>Sim</td>
+                    <td><button type="button" class="btn btn-primary">Logar</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Lara ALves</td>
+                    <td>00005</td>
+                    <td>1</td>
+                    <td>lara@fiap.com</td>
+                    <td>Sim</td>
+                    <td>Sim</td>
+                    <td><button type="button" class="btn btn-primary">Logar</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Mara Diniz</td>
+                    <td>00006</td>
+                    <td>0</td>
+                    <td>mara@fiap.com</td>
+                    <td>Sim</td>
+                    <td>Não</td>
+                    <td><button type="button" class="btn btn-primary">Logar</button></td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+
+          
         </div>
       </div>
 
